@@ -11,28 +11,24 @@ Customizable Parameters: Thresholds for drowsiness detection and alarm sensitivi
 Installation
 Clone the Repository:
 
-bash
-Copy code
+
 git clone https://github.com/yourusername/drowsiness-detection.git
 cd drowsiness-detection
 Install the Required Packages:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Download Pre-trained Model:
 
 Place the pre-trained model cnnCat2.h5 in the models/ directory. You can either use the provided model or train your own using the provided training script.
 Run the Application:
 
-bash
-Copy code
+
 python drowsiness_detection.py
 Dataset
 The model was trained on a custom dataset of grayscale images, categorized into "open" and "closed" eye states. The images are resized to 24x24 pixels for processing. The dataset is structured as follows:
 
-kotlin
-Copy code
+
 data/
 ├── train/
 │   ├── open/
